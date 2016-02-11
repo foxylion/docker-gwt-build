@@ -1,5 +1,8 @@
 # GWT Build with a Docker Image
 
+[![Docker Stars](https://img.shields.io/docker/stars/foxylion/gwt-build.svg?style=flat-square)](https://hub.docker.com/r/foxylion/gwt-build/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/foxylion/gwt-build.svg?style=flat-square)](https://hub.docker.com/r/foxylion/gwt-build/)
+
 Docker Image to build GWT with effort.
 
 # Build GWT on Linux
