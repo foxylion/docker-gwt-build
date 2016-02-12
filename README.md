@@ -10,7 +10,7 @@ Docker Image to build GWT with effort.
 Can be used on any Linux with installed ``docker-engine``.
 
 1. Switch into gwt your Git directory
-2. Run Docker container ``docker run --rm -v `pwd`:/gwt foxylion/gwt-build make dist-dev``
+2. Run Docker container ``docker run --rm -v `pwd`:/gwt foxylion/gwt-build ant clean dist-dev``
 
 The built jars can be found under ``build/lib/``.
 
@@ -21,6 +21,6 @@ The built jars can be found under ``build/lib/``.
 3. Start Vagrant machine ``vagrant up``
 4. SSH into the machine ``vagrant ssh``
 5. Change to the build directory ``cd /vagrant``
-6. Run Docker container ``docker run --rm -v `pwd`:/gwt foxylion/gwt-build make dist-dev``
+6. Run Docker container ``docker run --rm -v `pwd`:/gwt foxylion/gwt-build ant clean dist-dev``
 
 The built jars can be found under ``build/lib/``.

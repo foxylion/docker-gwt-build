@@ -10,4 +10,9 @@ ENV PATH=/apache-ant-1.9.6/bin:$PATH
 RUN git clone --depth 1 https://github.com/gwtproject/tools.git /gwt-tools
 ENV GWT_TOOLS=/gwt-tools
 
-COPY Makefile /Makefile
+ENV TZ=America/Los_Angeles
+ENV ANT_OPTS=-Dfile.encoding=UTF-8
+
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
