@@ -3,13 +3,13 @@
 [![Docker Stars](https://img.shields.io/docker/stars/foxylion/gwt-build.svg?style=flat-square)](https://hub.docker.com/r/foxylion/gwt-build/)
 [![Docker Pulls](https://img.shields.io/docker/pulls/foxylion/gwt-build.svg?style=flat-square)](https://hub.docker.com/r/foxylion/gwt-build/)
 
-Docker Image to build GWT with effort.
+Docker Image to build GWT without effort.
 
 # Build GWT on Linux
 
 Can be used on any Linux with installed ``docker-engine``.
 
-1. Switch into gwt your Git directory
+1. Siwtch into your gwt Git directory
 2. Run Docker container ``docker run --rm -v `pwd`:/gwt foxylion/gwt-build ant clean dist-dev``
 
 The built jars can be found under ``build/lib/``.
