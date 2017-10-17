@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 MAINTAINER Jakob Jarosch <dev@jakobjarosch.de>
 
 RUN apt-get update && apt-get install -y openjdk-8-jdk git make wget unzip
